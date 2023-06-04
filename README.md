@@ -1,11 +1,5 @@
 # Analisis Sentimen Coldplay di Indonesia Menggunakan PySpark
 
-Analisis sentimen adalah proses mengumpulkan, memahami, dan mengevaluasi opini, pandangan, dan emosi yang terkandung dalam teks, seperti ulasan pelanggan, tweet, posting media sosial, atau artikel berita. Tujuan dari analisis sentimen adalah untuk memahami sikap umum atau sentimen yang terkait dengan topik tertentu, produk, merek, atau entitas lainnya.
+Analisis sentimen melibatkan penggunaan teknik pemrosesan bahasa atau NLP untuk memahami kata - kata dari kalimat yang diinputkan sehingga teks dapat diklasifikasikan yang umumnya menjadi positif, negatif, atau netral. Pada studi kasus ini, digunakan teknik web scraping dari youtube terhadap komentar 5 video yang berkaitan dengan konser Coldplay yang akan diadakan di Indonesia mendatang. Tujuannya adalah untuk melihat antusiasme masyarakat Indonesia dengan adanya kedatangan Coldplay di Indonesia.
 
-Dalam analisis sentimen, teks dapat diklasifikasikan menjadi beberapa kategori sentimen umum, seperti positif, negatif, atau netral. Analisis ini dapat dilakukan dengan metode tradisional berbasis aturan atau dengan menggunakan pendekatan berbasis mesin pembelajaran seperti pembelajaran mendalam (deep learning).
-
-Pada dasarnya, analisis sentimen melibatkan penggunaan teknik pemrosesan bahasa alami (Natural Language Processing atau NLP) untuk mengidentifikasi dan memahami kata-kata kunci, frasa, atau konteks yang mengungkapkan sentimen yang diinginkan. Dalam beberapa kasus, juga mungkin untuk mengidentifikasi entitas atau aspek yang spesifik yang menjadi subjek sentimen, seperti fitur produk atau layanan tertentu.
-
-Aplikasi analisis sentimen dapat sangat beragam. Di dunia bisnis, analisis sentimen digunakan untuk memahami umpan balik pelanggan, reputasi merek, tren pasar, dan kepuasan pelanggan. Dalam analisis media sosial, hal ini dapat digunakan untuk melacak dan memahami opini publik tentang topik atau acara tertentu. Di bidang keuangan, analisis sentimen dapat membantu memprediksi pergerakan pasar berdasarkan sentimen investor.
-
-Secara keseluruhan, analisis sentimen membantu memahami pandangan dan sentimen manusia yang terkait dengan berbagai subjek, dan dapat memberikan wawasan yang berharga untuk pengambilan keputusan dan pengembangan strategi.
+komentar akan dibagi menjadi 3 kategori setelah melalui process pre-processing dan labelling yaitu positif, negatif, netral. Kemudian data komentar awal akan di-splitting dengan rasio 7:3 sebagai data training dan data testing. Dalam pemodelannya, digunakan teknik logistic regression dan melakukan evaluasi dengan melihat berapa banyak prediksi yang sesuai dengan labellingnya.
